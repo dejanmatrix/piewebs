@@ -42,7 +42,6 @@
                 <div class="col-xs-12">
                     <div class="text-center">
                         <form action="https://pie247.com/sign-up/" name="form" method="post" style="margin:0; padding:0;">
-                            <input type="hidden" name="enrollerKeyCode" value="">
                             <input type="submit" class="btn btn-warning btn-lg" value="JOIN NOW">
                         </form>
                     </div>
@@ -60,7 +59,6 @@
                             <p class="text-center"><img src="{{asset('images/photo-1.png')}}" class="img-responsive" style="margin:0 auto;"></p>
                             <h2 class="text-center"><span class="color-pie-orange txt-shadow">BONUS OFFER:</span></h2>
                             <form action="https://pie247.com/sign-up/" name="form" method="post" class="text-center">
-                                <input type="hidden" name="enrollerKeyCode" value="">
                                 <input type="submit" class="btn btn-warning" value="JOIN FREE Today During Pre-Launch!">
                                 <h4 class="text-center">See Offer Below!</h4>
                             </form>
@@ -86,7 +84,6 @@
                                     <h4 class="color-pie-orange">Kerry W., Orlando, Florida</h4>
                                     <div class="text-center">
                                         <form action="https://pie247.com/sign-up/" name="form" method="post" style="margin:0; padding:0; padding-top:30px;">
-                                            <input type="hidden" name="enrollerKeyCode" value="">
                                             <input type="submit" class="btn btn-warning btn-lg" value="JOIN NOW">
                                         </form>
                                     </div>
@@ -144,7 +141,6 @@
                                 <div class="col-sm-8">
                                     <h3><em>PIE 24/7 Founder, David T Rosen, is so sure you will enjoy the benefits and financial rewards of being a member, he is
                                             <form action="https://pie247.com/sign-up/" name="form" method="post" style="display:inline; padding:0; margin:0;">
-                                                <input type="hidden" name="enrollerKeyCode" value="">
                                                 <input type="submit" value="Allowing You to Register" class="color-pie-blue" style="border:0; background:transparent;">
                                             </form>
                                             your top position FREE!</em></h3>
@@ -164,7 +160,6 @@
 
                 <div class="col-xs-12 text-center">
                     <form action="https://pie247.com/sign-up/" name="form" method="post" style="padding:0; margin:0;">
-                        <input type="hidden" name="enrollerKeyCode" value="">
                         <input type="submit" class="btn btn-warning btn-lg" style="margin-bottom:10px;" value="JOIN NOW">
                     </form>
                 </div>
@@ -192,7 +187,6 @@
                 <div class="col-xs-12">
                     <div class="text-center">
                         <form action="https://pie247.com/sign-up/" name="form" method="post" style="margin:0; padding:0; padding-top:30px;">
-                            <input type="hidden" name="enrollerKeyCode" value="">
                             <input type="submit" class="btn btn-warning btn-lg" value="JOIN NOW">
                         </form>
                     </div>
@@ -236,7 +230,6 @@
                                 <div class="col-sm-12">
                                     <h3 class="text-center">Chose our Paid Membership Today<br>
                                         <form action="https://pie247.com/sign-up/" name="form" method="post" style="display:inline; padding:0; margin:0;">
-                                            <input type="hidden" name="enrollerKeyCode" value="">
                                             <input type="submit" value="A huge 40% savings during Pre-Launch!" class="color-pie-blue" style="border:0; background:transparent;">
                                         </form>
                                     </h3>
@@ -316,7 +309,6 @@
 
                 <div class="col-xs-12 text-center">
                     <form action="https://pie247.com/sign-up/" name="form" method="post" style="padding:0; margin:0;">
-                        <input type="hidden" name="enrollerKeyCode" value="">
                         <input type="submit" class="btn btn-warning btn-lg" style="margin-bottom:10px;" value="JOIN NOW">
                     </form>
                 </div>
@@ -353,7 +345,6 @@
                                     <h4 class="color-pie-orange">Wu Bin, Toronto, ON, Canada</h4>
                                     <div class="text-center">
                                         <form action="https://pie247.com/sign-up/" name="form" method="post" style="margin:0; padding:0; padding-top:30px;">
-                                            <input type="hidden" name="enrollerKeyCode" value="">
                                             <input type="submit" class="btn btn-warning btn-lg" value="JOIN NOW">
                                         </form>
                                     </div>
@@ -458,7 +449,6 @@
                                     <h3><em>What are you waiting for?  You have EVERYTHING to gain and nothing to lose!</em></h3>
                                     <p>
                                     <form action="https://pie247.com/sign-up/" name="form" method="post" style="margin:0; padding:0; padding-top:30px;">
-                                        <input type="hidden" name="enrollerKeyCode" value="">
                                         <input type="submit" class="btn btn-warning btn-lg" style="margin-bottom:10px;" value="JOIN NOW">
                                     </form>
                                     </p>
@@ -512,25 +502,27 @@
                 <div class="modal-body">
 
                     <p><strong>Have any questions or comments?</strong><br>Please feel free to send us an email through this form:</p>
-                    <form role="form" id="contact" name="contact" method="post" action="MAILTO:dmarkovic@matrixsoftwaregroup.net">
-                        <div class="form-group">
-                            <label for="cfname" class="color-pie-orange">First Name</label>
-                            <input type="text" class="form-control" id="cfname" name="cfname" placeholder="Your name...">
-                        </div>
-                        <div class="form-group">
-                            <label for="clname" class="color-pie-orange">Last Name</label>
-                            <input type="text" class="form-control" id="clname" name="clname" placeholder="Your name...">
-                        </div>
-                        <div class="form-group">
-                            <label for="cemail" class="color-pie-orange">Email</label>
-                            <input type="email" class="form-control" id="cemail" name="cemail" placeholder="Your email...">
-                        </div>
-                        <div class="form-group">
-                            <label for="cmessage" class="color-pie-orange">Message</label>
-                            <textarea class="form-control" id="cmessage" name="cmessage" rows="3" placeholder="Your message..."></textarea>
-                        </div>
-                        <button type="submit" id="submit2" class="btn btn-success">Send Email</button>
+                    <!--  -->
+                    <form role="form" id="contact" name="contact" method="post" action="mailto:{{profile.email}}">
+                    <div class="form-group">
+                        <label for="cfname" class="color-pie-orange">First Name</label>
+                        <input type="text" class="form-control" id="cfname" name="cfname" placeholder="Your name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="clname" class="color-pie-orange">Last Name</label>
+                        <input type="text" class="form-control" id="clname" name="clname" placeholder="Your name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="cemail" class="color-pie-orange">Email</label>
+                        <input type="email" class="form-control" id="cemail" name="cemail" placeholder="Your email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="cmessage" class="color-pie-orange">Message</label>
+                        <textarea class="form-control" id="cmessage" name="cmessage" rows="3" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" id="submit2" class="btn btn-success">Send Email</button>
                     </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
